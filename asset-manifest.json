@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Web_Warriors/static/css/main.9974359e.css",
+    "main.js": "/Web_Warriors/static/js/main.565213a0.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Web_Warriors/static/js/787.1ed0c42c.chunk.js",
+    "static/media/herobg.webp": "/Web_Warriors/static/media/herobg.e5c885ec93d4bba6b13d.webp",
+    "index.html": "/Web_Warriors/index.html",
+    "main.9974359e.css.map": "/Web_Warriors/static/css/main.9974359e.css.map",
+    "main.565213a0.js.map": "/Web_Warriors/static/js/main.565213a0.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Web_Warriors/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9974359e.css",
+    "static/js/main.565213a0.js"
+  ]
+}
