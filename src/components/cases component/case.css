@@ -1,0 +1,225 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 1000px; */
+  /* margin: 0 auto; */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  padding: 0.5rem 1rem;
+}
+
+@media screen {
+  
+}
+
+.container__wrapper{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.text__details{
+  display: none;
+}
+
+
+
+@media (min-width: 600px) {
+  .container__wrapper:nth-child(2n){
+  color: red;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  }
+
+  .text__details{
+    display: block;
+  }
+  .container__wrapper{
+  justify-content: start;
+  }
+
+  .img-container{
+    width: 40%;
+    aspect-ratio: 16/8;
+  }
+}
+
+.container > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.container > h2 {
+  font-weight: 500;
+}
+
+.img-container {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+
+
+.img-container > img {
+  cursor: pointer;
+  border-radius: 6px;
+  aspect-ratio: 16/8;
+  box-shadow: 0 20px 25px -5px rgba(232, 211, 211, 0.423),
+    0 10px 10px -5px rgba(196, 186, 186, 0.1) !important;
+  filter: grayscale(100%);
+    transition: 0.3s;
+
+}
+
+.img-container > img:hover {
+  transform: scale(1.1);
+}
+
+
+/*
+      // container for popup image */
+      /* media query for project images */
+@media (max-width: 1250px) {
+  .img-container > img{
+    height: 200px;
+  }
+}
+@media (max-width: 850px) {
+  .img-container > img{
+    height: 150px;
+  }
+  .popImage{
+    height: 100px;
+    width: 80%;
+    top : 10%
+  }
+}
+
+.popupContainer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top:0 ;
+  overflow: hidden;
+  z-index: 1000000;
+  /* background-color: aqua; */
+  /* background: url("") no-repeat center; */
+
+/* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* gap : 2rem; */
+}
+/* // background of the popup umage */
+.popUpBackground {
+  position: relative;
+  /* display: none; */
+  
+
+  /* transition: all 2s ease-in-out; */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  
+  background-color: rgb(87, 23, 23);
+}
+/* @keyframes load {
+  from{
+    background-color: aquamarine;
+  }
+  to{
+    background-color: beige;
+  }
+} */
+
+
+/* // popup image, you can adjust here animation tranistion time and effect */
+.popImage {
+  position: absolute;
+  /* display: block; */
+  transition: all 0.3s ease-in-out;
+  /* width: 100%; */
+  
+  border-radius: 6px;
+   backdrop-filter: blur(8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  top: 500px;
+  /* height: 200px;
+  aspect-ratio: 16/8; */
+    
+}
+/* .popUptext {
+  color: rgba(233, 233, 233, 1);
+  position: relative;
+  display: block;
+  transition: all 0.3s slide;
+  border: 7px solid red;
+  border-radius: 6px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15),
+    0 10px 10px -5px rgba(0, 0, 0, 0.1);
+} */
+
+.body_class {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.popUptext{
+z-index: 101;
+position: absolute;
+top: 0;
+color: black;
+height: 2rem;
+width: 100%;
+height: 2.5rem; 
+text-decoration: none;
+text-align: left;
+padding-left: 2rem;
+padding-top : 2rem;
+}
+.popUpfooter{
+z-index: 101;
+position: absolute;
+bottom: 0;
+background-color: antiquewhite;
+color: black;
+height: 2rem;
+width: 100%;
+height: 2.5rem; 
+text-decoration: none;
+text-align: center;
+}
+.popUptext > h2,
+.popUptext > p
+{
+  color: white;
+  /* z-index: 101; */
+
+}
+
+/* .popUptext{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+} */
+
+@media (max-width:470px) {
+  .img-container > img{
+    height: 110px;
+  }
+  
+}

@@ -1,0 +1,82 @@
+footer{
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 5%;
+            background-color: black;
+            border-top: 1px solid rgb(58, 58, 58);
+        }
+        #footer_icon{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+        }
+        #footer_icon > a{
+            padding:  10px;
+            border-radius: 50%;
+        }
+        #footer_icon > a img{
+            height: 25px;
+            opacity: 0.5;
+            filter: saturate(0);
+        }
+        #footer_icon > a:hover img {
+            opacity: 1;
+            filter: saturate(50%);
+            transition: all 0.5s ;
+            transform: translateY(-3px);
+        }
+        .copyR{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            /* background-color: rgb(45, 42, 42); */
+            color: rgba(122, 121, 121, 0.7);
+            /* padding: 4px; */
+            /* display: none; */
+        }
+
+        .copyR > h4{
+            padding: 0.3rem;
+            color: var(--clr-accent--);
+            font-size: 1.2rem;
+            opacity: 0.6;
+        }
+
+        .copyR > a{
+            text-decoration: none;
+            color: var(--clr-accent-lite--);
+            filter: saturate(0);
+            opacity: 0.5;
+        }
+
+        .copyR > a:hover{
+            opacity: 1;
+            filter: saturate(100%);
+            transform: translateY(-3px);
+            /* color: rgb(132, 9, 225); */
+            transition: 0.5s ease;
+        }
+
+
+
+@media (max-width:500px) {
+    footer{
+        height: 130px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 0;
+        
+    }
+    .copyR{
+        justify-items: start;
+        align-self: flex-start;
+        padding: 0 5%;
+    }
+    #footer_icon{
+        padding-left: calc(5% - (10px)) ;
+    }
+}

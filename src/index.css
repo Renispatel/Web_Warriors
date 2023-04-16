@@ -1,0 +1,99 @@
+:root {
+  --clr-accent--: rgb(255, 255, 255);
+  --clr-main--: rgb(245, 238, 230);
+  --clr-accent-lite--: rgb(243, 219, 199);
+  --fs-50--: 1rem;
+  --fs-100--: 1.125rem;
+  --fs-200--: 1.5rem;
+  --fs-300--: 3rem;
+  --fs-500--: 5rem;
+  --ff-Teko--: 'Teko', sans-serif;
+  --ff-dancing--: 'Dancing Script', cursive;
+  --ff-body--: 'Schibsted Grotesk', sans-serif;
+  --ff-date--: 'Monoton', cursive;
+  --ff-month--: 'Bungee Shade', cursive;
+
+
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  width: 100%;
+  scrollbar-width: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
